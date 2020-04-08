@@ -117,7 +117,7 @@
 			  <img src="icons/Cured_Logo_Green.png" width="75"/>&nbsp; Campaigns
 			</div>
 			<div class="row no-gutters nav-item">
-			  <a class="nav-link" href="PAGE_CampaignDashboard.html">Campaigns</a>
+			  <a class="nav-link" href="index.html">Campaigns</a>
 			</div>
 
 			<div class="row no-gutters nav-item">
@@ -156,10 +156,10 @@
 					<!-- DASHBOARD HEADING -->
 					<div class="row no-gutters dashboard-heading-container">
 						<div class="col-xl-9 dashboard-heading">
-							Campaign Content Editor
+							Automation Content Editor
 						</div>
 						<div class="col-xl-3 dashboard-heading-button">
-							<a href="PAGE_CampaignDashboard.html" class="secondary-btn"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 52 52"><path fill="#0070D2" d="m48.6 23h-33.2c-0.9 0-1.3-1.1-0.7-1.7l9.6-9.6c0.6-0.6 0.6-1.5 0-2.1l-2.2-2.2c-0.6-0.6-1.5-0.6-2.1 0l-17.5 17.6c-0.6 0.6-0.6 1.5 0 2.1l17.5 17.5c0.6 0.6 1.5 0.6 2.1 0l2.1-2.1c0.6-0.6 0.6-1.5 0-2.1l-9.6-9.6c-0.6-0.7-0.2-1.8 0.7-1.8h33.2c0.8 0 1.5-0.6 1.5-1.4v-3c0-0.8-0.6-1.6-1.4-1.6z"></path></svg>&nbsp;&nbsp;Back to Campaign Dashboard</a>
+							<a href="index.html" class="secondary-btn"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 52 52"><path fill="#0070D2" d="m48.6 23h-33.2c-0.9 0-1.3-1.1-0.7-1.7l9.6-9.6c0.6-0.6 0.6-1.5 0-2.1l-2.2-2.2c-0.6-0.6-1.5-0.6-2.1 0l-17.5 17.6c-0.6 0.6-0.6 1.5 0 2.1l17.5 17.5c0.6 0.6 1.5 0.6 2.1 0l2.1-2.1c0.6-0.6 0.6-1.5 0-2.1l-9.6-9.6c-0.6-0.7-0.2-1.8 0.7-1.8h33.2c0.8 0 1.5-0.6 1.5-1.4v-3c0-0.8-0.6-1.6-1.4-1.6z"></path></svg>&nbsp;&nbsp;Back to Campaign Dashboard</a>
 						</div>
 					</div>
 					<!-- /DASHBOARD HEADING -->
@@ -199,20 +199,19 @@
 							  </div>	
 								
 							  <div class="form-group">
-								<label class="cp-label" for="cp-campaign-name">Campaign Name *</label>
+								<label class="cp-label" for="cp-campaign-name">Message Name *</label>
 								<input type="text" class="form-control" value="CR New Clinic Opening" id="cp-campaign-name" aria-describedby="Campaign Name" placeholder="">
 							  </div>
 							 
 							   <div class="row no-gutters">
 								  <div class="col-6">
 									  <div class="form-group">
-										<label class="cp-label" for="cp-campaign-type">Campaign Type *</label>
+										<label class="cp-label" for="cp-campaign-type">Automation Category *</label>
 										<select class="form-control cp-select" placeholder="Select an Option" id="cp-campaign-type">
 										  <option hidden selected disabled>Select an Option</option>
 										  <option>All Campaigns</option>
-										  <option>Ad Hoc Campaigns</option>
-										  <option>COVID-19 Communications</option>
-										  <option selected>New Clinic Openings</option>
+										  <option>Ad Hoc</option>
+										  <option selected>New Clinic Opening</option>
 										</select>
 									 </div>
 								  </div>
@@ -295,12 +294,12 @@
 													<div class="row no-gutters">
 
 														<!-- EDIT ICON -->
-														<div class="col-5 version-icon-container">
+														<div id="edit-icon" class="col-5 version-icon-container">
 															<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 52 52"><g fill="#7B7976"><path d="m9.5 33.4l8.9 8.9c0.4 0.4 1 0.4 1.4 0l22.2-22.3c0.4-0.4 0.4-1 0-1.4l-8.8-8.8c-0.4-0.4-1-0.4-1.4 0l-22.3 22.3c-0.4 0.4-0.4 1 0 1.3z m26.6-27.7c-0.4 0.4-0.4 1 0 1.4l8.8 8.8c0.4 0.4 1 0.4 1.4 0l2.5-2.5c1.6-1.5 1.6-3.9 0-5.5l-4.7-4.7c-1.6-1.6-4.1-1.6-5.7 0l-2.3 2.5z m-34 42.5c-0.2 1 0.7 1.9 1.7 1.7l10.9-2.6c0.4-0.1 0.7-0.3 0.9-0.5l0.2-0.2c0.2-0.2 0.3-0.9-0.1-1.3l-9-9c-0.4-0.4-1.1-0.3-1.3-0.1l-0.2 0.2c-0.3 0.3-0.4 0.6-0.5 0.9l-2.6 10.9z"></path></g></svg>
 														</div>
 
 														<!-- PREVIEW ICON -->
-														<div class="col-5 version-icon-container">
+														<div id="preview-icon" class="col-5 version-icon-container">
 															<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 52 52"><g fill="#7B7976"><path d="m51.8 25.1c-4.7-9.5-14.5-16.1-25.8-16.1s-21.1 6.6-25.8 16.1c-0.3 0.6-0.3 1.3 0 1.8 4.7 9.5 14.5 16.1 25.8 16.1s21.1-6.6 25.8-16.1c0.3-0.6 0.3-1.2 0-1.8z m-25.8 11.9c-6.1 0-11-4.9-11-11s4.9-11 11-11 11 4.9 11 11-4.9 11-11 11z m0-18c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z"></path></g></svg>
 														</div>
 														
@@ -311,19 +310,19 @@
 										</div>
 									</div>		
 									
-								<div id="version-details" class="mt-20">
-									<div class="col-12">	
+								<div id="version-details">
+									<div class="col-12 mt-20">	
 										<div class="row no-gutters">
 											<div class="col-12 form-group">
 												<label class="version-label" for="version-version">Version Name *</label>
-												<input type="text" class="form-control" id="version-theme" aria-describedby="Version" placeholder="">
+												<input type="text" class="form-control" id="version-theme" value=:"CR New Clinic Opening" aria-describedby="Version" placeholder="">
 											</div>
 										</div>
 
 										<div class="row no-gutters">
 										   <div class="col-12 form-group mb-0">
 											  <label class="version-label" for="version-sl">Subject Line *</label>
-											  <textarea type="text" class="form-control" id="version-sl" aria-describedby="Subject Line" placeholder=""></textarea>
+											  <textarea type="text" class="form-control" id="version-sl" aria-describedby="Subject Line" placeholder="">Hey Cedar Rapids, We're Open for Treatment!</textarea>
 										   </div>
 										   
 										</div>
@@ -385,7 +384,7 @@
 											<div class="col-12 em-btn-container">
 
 												<!-- ADD AND SAVE BUTTONS -->
-												<div class="row no-gutters ">
+												<div id="email-edit-buttons" class="row no-gutters ">
 													<div class="col-5">
 													</div>
 
@@ -405,8 +404,31 @@
 												<!-- /END ADD AND SAVE BUTTONS -->
 
 
+												<!-- DESKTOP AND MOBILE BUTTONS -->
+												<div id="email-preview-buttons" class="preview-btn-container hide">
+												<div class="row no-gutters">
+													<div class="col-5">
+													</div>
+
+													<div class="col-2">
+														<button id="desktop-preview" class="primary-btn">Desktop
+														</button>
+													</div>
+
+													<div class="col-1">
+													</div>
+
+													<div class="col-2">
+														<button id="mobile-preview" class="primary-btn">Mobile
+														</button>
+													</div>
+												</div>
+												</div>
+												<!-- /END ADD AND SAVE BUTTONS -->
+
+
 												<!-- EMAIL EDITOR -->
-												<div class="col-12 mt-0">
+												<div id="email-edit" class="col-12 mt-0">
 													<div class="row no-gutters">
 
 														 <!-- OUTER CONTAINER -->
@@ -441,20 +463,44 @@
 																			    </table>
         																		<!-- /01a 1-Col Image -->
 
+        																		<!-- BUTTONS -->
         																		<div class="email-edit-container">
         																			<div class="col-12">
         																				<div class="row no-gutters">
         																					<div class="col-6">
-        																						<button class="secondary-btn-wide">Edit
+        																						<button id="edit-module" class="secondary-btn-wide">Edit
 																								</button>
         																					</div>
         																					<div class="col-6">
-        																						<button class="secondary-btn-wide">Save
+        																						<button class="secondary-btn-wide">Delete
 																								</button>
         																					</div>
         																				</div>
         																			</div>
         																		</div>
+        																		<!-- BUTTONS -->
+
+        																	<!-- FORM -->
+        																	 <div id="email-edit-form" class="email-form-container hide">
+        																	 		<div class="col-12">
+        																	 			<div class="row no-gutters">
+        																	 				<form >
+																							  <div class="form-group">
+																							    <label for="exampleInputEmail1">Headline Text</label>
+																							    <input type="email" class="form-control form-control-sm" id="exampleInputEmail1" aria-describedby="emailHelp" value="Let's talk about next steps" placeholder="">
+																							    
+																							  </div>
+																							  <div class="form-group">
+																							    <label for="exampleInputPassword1">Background Image Path</label>
+																							    <input type="password" class="form-control form-control-sm" id="exampleInputPassword1" placeholder="">
+																							  </div>
+																							 
+																							  <button class="secondary-btn-wide" type="submit">Update</button>
+																							</form>
+        																	 			</div>
+        																	 		</div>
+        																	 </div>
+        																	 <!-- /FORM -->
 
 
 																		  </div>
@@ -469,6 +515,25 @@
 																		    		<h2 style="color: rgb(26, 66, 79); font-family: 'Crimson Text', Georgia, sans-serif; font-size: 48px; font-weight: normal; line-height: 54px; margin: 0px; text-align: left;">
 																		     		<span style="font-size:48px;">What to expect for your mind body and soul</span></h2></td></tr></table>
 																		     <!-- /01b 1-Col Headline -->
+
+																		     <!-- BUTTONS -->
+																		     <div class="email-edit-container">
+        																			<div class="col-12">
+        																				<div class="row no-gutters">
+        																					<div class="col-6">
+        																						<button class="secondary-btn-wide">Edit
+																								</button>
+        																					</div>
+        																					<div class="col-6">
+        																						<button class="secondary-btn-wide">Delete
+																								</button>
+        																					</div>
+        																				</div>
+        																			</div>
+        																	 </div>
+        																	 <!-- /BUTTONS -->
+
+        																	
 																		  </div>
 																		  <!-- /MODULE 2 -->
 
@@ -481,13 +546,63 @@
 															</tr>
 														</table>
 
-
-
-
-
 													</div>
 												</div>
 												<!-- /EMAIL EDITOR -->
+
+
+
+												<!-- EMAIL PREVIEWER -->
+												<div id="email-preview" class="email-preview-container hide col-12">
+													<div class="row no-gutters">
+
+																  <!-- OUTER CONTAINER -->
+																  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+																      <tr>
+																        <td align="center">
+
+																          <!-- INNER CONTAINER -->
+																          <table id="desktop-mobile-preview"  align="center" class="container-table" border="0" cellpadding="0" cellspacing="0" style="width: 600px">
+																            <tr>
+																                <td align="center">
+																 
+																                  
+																                  
+																                  <table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><!--%%=BeginImpressionRegion('01a 1-Col Image')=%%--><!--01a 1-Col Image --><table border="0" cellpadding="0" cellspacing="0" width="100%">
+																 
+																  <tr>
+																   <td style="background: url('https://image.s10.sfmc-content.com/lib/fe3e157075640679711476/m/1/a552e514-7cca-4dbf-a983-d76d4247a773.jpg'); background-size: cover; width: 600px; height:425px;" valign="top">
+																    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+																     
+																      <tr>
+																       <td align="center" style="padding: 30px 0px 0px 0px;">
+																        <a href="#"><img alt="Socratic Health" src="https://image.s10.sfmc-content.com/lib/fe3e157075640679711476/m/1/0a7b2401-a673-4bda-98ad-cf2ed2b0dbdf.png" target="_blank" width="225"></a></td></tr><tr>
+																       <td style="color: rgb(255, 255, 255); font-family: Georgia, sans-serif; line-height: 58px; padding: 20px 0px 0px 30px;">
+																        <span style="font-size: 22px;">Let's talk about your</span><br>
+																        <span style="font-size: 115px;">Next</span><br>
+																        <span style="font-size: 120px; line-height: 60px">Steps</span></td></tr></table></td></tr></table><!-- /01a 1-Col Image --><!--%%=EndImpressionRegion()=%%--></td></tr></table><table cellpadding="0" cellspacing="0" width="100%" style="min-width: 100%; " class="stylingblock-content-wrapper"><tr><td class="stylingblock-content-wrapper camarker-inner"><!--%%=BeginImpressionRegion('01 Headline White')=%%--><!--01b 1-Col Headline --><table bgcolor="#CDE7E6" border="0" cellpadding="0" cellspacing="0" width="100%">
+																 
+																  <tr>
+																   <td align="center" class="pr-20" style="padding: 20px 20px 20px 20px;">
+																    <h2 style="color: rgb(26, 66, 79); font-family: NoeDisplay-Regular, Georgia, sans-serif; font-size: 48px; font-weight: normal; line-height: 54px; margin: 0px; text-align: left;">
+																     <span style="font-size:48px;">What to expect for your mind body and soul</span></h2></td></tr></table><!-- /01b 1-Col Headline -->
+
+																                </td>
+																            </tr>
+																          </table>
+																          <!-- INNER CONTAINER -->
+
+																        </td>
+																      </tr>
+																  </table>
+																  <!-- /OUTER CONTAINER -->
+
+																  </div>
+
+													</div>
+												</div>
+												<!-- /EMAIL PREVIEWER -->
+
 
 											</div>
 										</div>
@@ -553,44 +668,36 @@ $(document).ready(function(){
   });
 	
 	
-  // Close new version top icon	
-  $("#close_version").click(function(){
-    $("#new-version-form").hide();
-    $("#new-version-btn").show();
 
-  });
-
-  // Show new version form via Add Campaign Version button
-   $("#new_version").click(function(){
-    $("#new-version-form").show();
-	$("#new-version-btn").hide();
-  });
-	
-	
-    // Close new version cancel button
-   $("#cancel_version").click(function(){
-    $("#new-version-form").hide();
-    $("#new-version-btn").show();
-  });
-	
-	
-  // Version Params Edit
-  $("#version-params-edit").click(function(){
-	  $("#version-details").toggle();
-	  $("#version-heading-icon").toggleClass("rotate-90");
-  });
-	
-  // Toggle theme details	
-  $("#version-heading-icon").click(function(){
-    $("#version-details").toggle();
-	$("#version-heading-icon").toggleClass("rotate-90");
+  // Edit toggle
+  $("#edit-icon").click(function(){
+    $("#email-preview").hide();
+    $("#email-preview-buttons").hide();
+	$("#email-edit").show();
+	$("#email-edit-buttons").show();
   });	
-	
 
-  // Edit version toggle
-  $("#version-heading-icon").click(function(){
-    $("#version-details").toggle();
-	$("#version-heading-icon").toggleClass("rotate-90");
+  // Edit Module Form toggle
+  $("#edit-module").click(function(){
+    $("#email-edit-form").toggleClass('hide');
+  });			
+
+
+  // Preview toggle
+  $("#preview-icon").click(function(){
+    $("#email-preview").show();
+    $("#email-preview-buttons").show();
+	$("#email-edit").hide();
+	$("#email-edit-buttons").hide();
+  });	
+
+  // Desktop Mobile toggle
+  $("#mobile-preview").click(function(){
+    $("#desktop-mobile-preview").css("width", "350px");
+  });	
+
+  $("#desktop-preview").click(function(){
+    $("#desktop-mobile-preview").css("width", "600px");
   });			
 
 	
