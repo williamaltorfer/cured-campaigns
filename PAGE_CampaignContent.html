@@ -1,0 +1,600 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cured Marketing Platform</title>
+
+<!-- STYLESHEETS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+
+	
+<!-- FONTS -->	
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+
+	  
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+
+<!-- EMAIL STYLES -->
+<style>
+
+    :root {
+      color-scheme: light dark;
+      supported-color-schemes: light dark;
+    }
+
+    /* MEDIA QUERIES */
+    @media screen and (max-width:600px) {
+    .container-table, .full-width {
+        width: 100% !important;
+    }
+    .stack {
+      display: block !important;
+        width: 100% !important;
+    }
+    .hide {
+      display: none!important;
+    }
+    .center {
+      text-align: center!important;
+   }
+   img.center  {
+      display: inline!important;
+      text-align: center!important;
+    }
+
+    /* Padding */
+    .pt-0 {
+      padding-top: 0px !important;
+    }
+    .pt-10 {
+      padding-top: 10px !important;
+    }
+    .pt-20 {
+      padding-top: 20px !important;
+    }
+    .pt-30 {
+      padding-top: 30px !important;
+    }
+    .pb-0 {
+      padding-bottom: 0px !important;
+    }
+    .pb-10 {
+      padding-bottom: 10px !important;
+    }
+    .pb-20 {
+      padding-bottom: 20px !important;
+    }
+    .pb-30 {
+      padding-bottom: 30px !important;
+    }
+    .pl-0 {
+      padding-left: 0px !important;
+    }
+    .pl-10 {
+      padding-left: 10px !important;
+    }
+    .pl-20 {
+      padding-left: 20px !important;
+    }
+    .pl-30 {
+      padding-left: 30px !important;
+    }
+    .pr-0 {
+      padding-right: 0px !important;
+    }
+    .pr-10 {
+      padding-right: 10px !important;
+    }
+    .pr-20 {
+      padding-right: 20px !important;
+    }
+    .pr-30 {
+      padding-right: 30px !important;
+    }
+    
+  }
+  </style>	
+
+
+</head>
+
+<body>
+	
+<div class="container-background">
+  <div class="row no-gutters">
+	
+	<!--SIDENAV -->
+	<div class="col-2">		
+		<div class="container container-nav">
+			<div class="row no-gutters nav-title">
+			  <img src="icons/Cured_Logo_Green.png" width="75"/>&nbsp; Campaigns
+			</div>
+			<div class="row no-gutters nav-item">
+			  <a class="nav-link" href="PAGE_CampaignDashboard.html">Campaigns</a>
+			</div>
+
+			<div class="row no-gutters nav-item">
+			  <a class="nav-link" href="PAGE_AutomationDashboard.html">Automated Messages</a>
+			</div>
+
+			<div class="row no-gutters nav-item">
+			  <a class="nav-link" href="#">SMS</a>
+			</div>
+			
+			<div class="row no-gutters nav-title">
+			 Resources
+			</div>
+			<div class="row no-gutters nav-item">
+			   <a class="nav-link" href="#">Documentation</a>
+			</div>
+			<div class="row no-gutters nav-item">
+			   <a class="nav-link" href="#">Submit Feedback</a>
+			</div>
+			 
+			 <div class="row no-gutters nav-title">
+			  <span class="nav-sub-title">&copy; 2020 Cured<br>v1.0 DEV Environment</span>
+			</div>
+		</div>
+	 </div>
+	 <!-- /SIDENAV -->
+	 
+	 <!-- DASHBOARD CONTAINER --> 
+	 <div class="col-10">
+		 <div class="container-spacing">
+		 	<div class="row no-gutters">
+				<div class="col container-dashboard">
+					
+					
+				
+					<!-- DASHBOARD HEADING -->
+					<div class="row no-gutters dashboard-heading-container">
+						<div class="col-xl-9 dashboard-heading">
+							Campaign Content Editor
+						</div>
+						<div class="col-xl-3 dashboard-heading-button">
+							<a href="PAGE_CampaignDashboard.html" class="secondary-btn"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 52 52"><path fill="#0070D2" d="m48.6 23h-33.2c-0.9 0-1.3-1.1-0.7-1.7l9.6-9.6c0.6-0.6 0.6-1.5 0-2.1l-2.2-2.2c-0.6-0.6-1.5-0.6-2.1 0l-17.5 17.6c-0.6 0.6-0.6 1.5 0 2.1l17.5 17.5c0.6 0.6 1.5 0.6 2.1 0l2.1-2.1c0.6-0.6 0.6-1.5 0-2.1l-9.6-9.6c-0.6-0.7-0.2-1.8 0.7-1.8h33.2c0.8 0 1.5-0.6 1.5-1.4v-3c0-0.8-0.6-1.6-1.4-1.6z"></path></svg>&nbsp;&nbsp;Back to Campaign Dashboard</a>
+						</div>
+					</div>
+					<!-- /DASHBOARD HEADING -->
+					
+
+					<!-- DASHBOARD TOGGLES -->
+					<div class="row no-gutters dashboard-campaign-container">
+						<div id="properties" class="col-4 col-xl-2 dashboard-toggle align-self-end">
+							PROPERTIES
+						</div>
+						<div id="content" class="col-4 col-xl-2 dashboard-toggle align-self-end">
+							CONTENT
+						</div>
+						<div class="col-xl-7 hide">
+						</div>
+					</div>
+					<!-- /DASHBOARD TOGGLES -->
+					
+					
+					<!-- PROPERTIES CONTAINER-->
+					<div id="properties-container" class="row no-gutters campaign-details-container">
+						
+						<!-- COLUMN 1 - CAMPAIGN PROPERTIES FORM-->
+						<div class="col-xl-6">
+							<form>
+								
+							  <div class="row no-gutters success-div">
+								 <div class="col-1 success-div-check">
+									 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 52 52"><path fill="#fff" d="m26 2c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24z m13.4 18l-15.3 15.5c-0.6 0.6-1.6 0.6-2.2 0l-8.4-8.5c-0.6-0.6-0.6-1.6 0-2.2l2.2-2.2c0.6-0.6 1.6-0.6 2.2 0l4.4 4.5c0.4 0.4 1.1 0.4 1.5 0l11.2-11.6c0.6-0.6 1.6-0.6 2.2 0l2.2 2.2c0.7 0.6 0.7 1.6 0 2.3z"></path></svg>
+								 </div>
+								 <div class="col-10 success-div-text">
+									[Campaign Name] was updated.
+								 </div>
+								   <div class="col-1 success-div-exit">
+									 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 52 52"><path fill="#fff" d="m26 2c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24z m4.9 24.8l7.8 7.8c0.4 0.4 0.4 1 0 1.4l-2.8 2.8c-0.4 0.4-1 0.4-1.4 0l-7.8-7.8c-0.4-0.4-1-0.4-1.4 0l-7.8 7.8c-0.4 0.4-1 0.4-1.4 0l-2.8-2.8c-0.4-0.4-0.4-1 0-1.4l7.8-7.8c0.4-0.4 0.4-1 0-1.4l-7.9-7.9c-0.4-0.4-0.4-1 0-1.4l2.8-2.8c0.4-0.4 1-0.4 1.4 0l7.9 7.9c0.4 0.4 1 0.4 1.4 0l7.8-7.8c0.4-0.4 1-0.4 1.4 0l2.8 2.8c0.4 0.4 0.4 1 0 1.4l-7.8 7.8c-0.3 0.4-0.3 1 0 1.4z"></path></svg>
+								 </div>
+							  </div>	
+								
+							  <div class="form-group">
+								<label class="cp-label" for="cp-campaign-name">Campaign Name *</label>
+								<input type="text" class="form-control" value="CR New Clinic Opening" id="cp-campaign-name" aria-describedby="Campaign Name" placeholder="">
+							  </div>
+							 
+							   <div class="row no-gutters">
+								  <div class="col-6">
+									  <div class="form-group">
+										<label class="cp-label" for="cp-campaign-type">Campaign Type *</label>
+										<select class="form-control cp-select" placeholder="Select an Option" id="cp-campaign-type">
+										  <option hidden selected disabled>Select an Option</option>
+										  <option>All Campaigns</option>
+										  <option>Ad Hoc Campaigns</option>
+										  <option>COVID-19 Communications</option>
+										  <option selected>New Clinic Openings</option>
+										</select>
+									 </div>
+								  </div>
+								  <div class="col-1"></div>
+								   <div class="col-5">
+									   <div class="form-group">
+										  	<label class="cp-label" for="cp-campaign-status">Status *</label>
+											<select class="form-control cp-select" placeholder="Select an Option" id="cp-campaign-status">
+											  <option hidden selected disabled>Select an Option</option>
+											  <option selected>In Build</option>
+											  <option>Complete</option>
+											</select>
+										 </div>
+								  </div>
+							  </div>
+								
+							   <div class="row no-gutters">
+									<div class="col-6">
+									  <div class="form-group">
+										<label class="cp-label" for="cp-campaign-submittedby">Submitted By</label>
+										<input type="text" class="form-control cp-submittedby" placeholder="bill@cured" id="cp-campaign-submittedby">
+									 </div>
+								  </div>
+								</div>
+								
+							   <div class="row no-gutters">
+								  <div class="col-6">
+									  <div class="form-group">
+										  	<label class="cp-label" for="cp-campaign-sendtime">Send Date</label>
+											<input class="form-control cp-select" placeholder="" id="cp-campaign-sendtime">
+									   </div>
+								  </div>
+								  <div class="col-1"></div>
+								   <div class="col-5">
+									   <div class="form-group">
+										  	<label class="cp-label" for="cp-campaign-sendtime">Send Time</label>
+											<input class="form-control cp-select" placeholder="" id="cp-campaign-sendtime">
+									   </div>
+								  </div>
+							  </div>
+								
+							  <div class="form-group">
+								<label class="cp-label" for="exampleInputEmail1">Notes</label>
+								<textarea type="text" class="form-control" id="" aria-describedby="Campaign Name" placeholder=""></textarea>
+							  </div>
+							 
+							  <div class="row no-gutters"> 
+								  <button type="submit" class="primary-btn">Save</button>
+							  </div>
+							 
+							</form>												
+						</div>
+	
+					</div>
+					<!-- /PROPERTIES CONTAINER--> 
+										
+					
+					<!-- CONTENT CONTAINER -->
+					<div id="content-container" class="row justify-content-between content-dashboard-container">
+						
+						<!-- VERSION CONTAINER-->
+						<div class="col-lg-4">
+							<div class="version-container">
+								
+							
+								<!-- VERSION DETAILS -->
+								<div id="version-form">
+									<div class="row no-gutters">
+										<div class="col-12 version-heading">
+											
+											<div class="row version-heading-container justify-content-between">
+												
+												<div class="col-8">
+													<div class="row no-gutters version-heading">
+														CR New Clinic Opening
+													</div>
+												</div>
+
+												<div class="col-4 mt-10">
+													<div class="row no-gutters">
+
+														<!-- EDIT ICON -->
+														<div class="col-5 version-icon-container">
+															<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 52 52"><g fill="#7B7976"><path d="m9.5 33.4l8.9 8.9c0.4 0.4 1 0.4 1.4 0l22.2-22.3c0.4-0.4 0.4-1 0-1.4l-8.8-8.8c-0.4-0.4-1-0.4-1.4 0l-22.3 22.3c-0.4 0.4-0.4 1 0 1.3z m26.6-27.7c-0.4 0.4-0.4 1 0 1.4l8.8 8.8c0.4 0.4 1 0.4 1.4 0l2.5-2.5c1.6-1.5 1.6-3.9 0-5.5l-4.7-4.7c-1.6-1.6-4.1-1.6-5.7 0l-2.3 2.5z m-34 42.5c-0.2 1 0.7 1.9 1.7 1.7l10.9-2.6c0.4-0.1 0.7-0.3 0.9-0.5l0.2-0.2c0.2-0.2 0.3-0.9-0.1-1.3l-9-9c-0.4-0.4-1.1-0.3-1.3-0.1l-0.2 0.2c-0.3 0.3-0.4 0.6-0.5 0.9l-2.6 10.9z"></path></g></svg>
+														</div>
+
+														<!-- PREVIEW ICON -->
+														<div class="col-5 version-icon-container">
+															<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 52 52"><g fill="#7B7976"><path d="m51.8 25.1c-4.7-9.5-14.5-16.1-25.8-16.1s-21.1 6.6-25.8 16.1c-0.3 0.6-0.3 1.3 0 1.8 4.7 9.5 14.5 16.1 25.8 16.1s21.1-6.6 25.8-16.1c0.3-0.6 0.3-1.2 0-1.8z m-25.8 11.9c-6.1 0-11-4.9-11-11s4.9-11 11-11 11 4.9 11 11-4.9 11-11 11z m0-18c-3.9 0-7 3.1-7 7s3.1 7 7 7 7-3.1 7-7-3.1-7-7-7z"></path></g></svg>
+														</div>
+														
+													</div>
+												</div>
+											</div>
+
+										</div>
+									</div>		
+									
+								<div id="version-details" class="mt-20">
+									<div class="col-12">	
+										<div class="row no-gutters">
+											<div class="col-12 form-group">
+												<label class="version-label" for="version-version">Version Name *</label>
+												<input type="text" class="form-control" id="version-theme" aria-describedby="Version" placeholder="">
+											</div>
+										</div>
+
+										<div class="row no-gutters">
+										   <div class="col-12 form-group mb-0">
+											  <label class="version-label" for="version-sl">Subject Line *</label>
+											  <textarea type="text" class="form-control" id="version-sl" aria-describedby="Subject Line" placeholder=""></textarea>
+										   </div>
+										   
+										</div>
+
+										<div class="row no-gutters">
+											<div class="col-12 form-group mb-0">
+												<label class="version-label" for="version-preheader">Preheader</label>
+												<textarea type="text" class="form-control" id="version-preheader" aria-describedby="Preheader" placeholder=""></textarea>
+											</div>
+											
+										</div>
+
+										<div class="row no-gutters">
+											<div class="col-12 form-group mb-20">
+												<label class="version-label" for="version-legal">Legal disclaimer text</label>
+												<textarea type="text" class="form-control" id="version-legal" aria-describedby="version-legal" placeholder=""></textarea>
+											</div>
+											
+										</div>
+
+									</div>
+							
+								
+									
+								</div>
+								</div>
+								<!-- /VERSION DETAILS -->
+								
+						
+								
+							</div>
+						</div>
+						<!-- /VERSION CONTAINER-->
+						
+		
+					    <!-- EMAIL EDIT/PREVIEW CONTAINER -->
+						<div class="col-lg-8">
+							
+
+							<div class="editor-container">
+																
+								<!-- DEFAULT CONTENT PLACEHOLDER -->
+								<div style="display: none" class="row editor-default-container">
+									<div class="col-12">
+										<img src="icons/Empty State/Lake Mountain/Large.png" width="50%" alt="default"/>
+									</div>
+									<div class="col-12 editor-default-heading">Ready for a fresh new email?
+									</div>
+									<div class="col-12 editor-default-body">Create a new version to get started.
+									</div>
+								</div>
+								<!-- /DEFAULT CONTENT PLACEHOLDER -->
+
+								
+								<!-- EMAIL CONTENT  -->
+								<div class="row editor-edit-container">
+									<div class="col-12">
+										<div class="row no-gutters">
+											<div class="col-12 em-btn-container">
+
+												<!-- ADD AND SAVE BUTTONS -->
+												<div class="row no-gutters ">
+													<div class="col-5">
+													</div>
+
+													<div class="col-2">
+														<button class="primary-btn">Add Modules
+														</button>
+													</div>
+
+													<div class="col-1">
+													</div>
+
+													<div class="col-2">
+														<button class="primary-btn">Save
+														</button>
+													</div>
+												</div>
+												<!-- /END ADD AND SAVE BUTTONS -->
+
+
+												<!-- EMAIL EDITOR -->
+												<div class="col-12 mt-0">
+													<div class="row no-gutters">
+
+														 <!-- OUTER CONTAINER -->
+														  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+														      <tr>
+														        <td align="center">
+
+														          <!-- INNER CONTAINER -->
+														          <table class="container-table" border="0" cellpadding="0" cellspacing="0" width="600">
+														             <tr>
+														                <td align="center">
+
+														                <div id='moduleList'>
+
+														                  <!-- MODULE 1 -->
+																		  <div class="module-container">
+																			  <!--01a 1-Col Image -->
+																			  <table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			  <tr>
+																			  <td style="background: url('https://image.s10.sfmc-content.com/lib/fe3e157075640679711476/m/1/a552e514-7cca-4dbf-a983-d76d4247a773.jpg'); background-size: cover; width: 600px; height:425px;" valign="top">
+																			    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+																			     
+																			      <tr>
+																			       <td align="center" style="padding: 30px 0px 0px 0px;">
+																			        <a href="#"><img alt="Socratic Health" src="https://image.s10.sfmc-content.com/lib/fe3e157075640679711476/m/1/0a7b2401-a673-4bda-98ad-cf2ed2b0dbdf.png" target="_blank" width="225"></a></td></tr><tr>
+																			       <td style="color: rgb(255, 255, 255); font-family: 'Crimson Text', Georgia, sans-serif; line-height: 58px; padding: 20px 0px 0px 30px;">
+																			        <span style="font-size: 22px;">Let's talk about your</span><br>
+																			        <span style="font-size: 115px;">Next</span><br>
+																			        <span style="font-size: 120px; line-height: 60px">Steps</span></td></tr></table>
+																			    </td>
+																			    </tr>
+																			    </table>
+        																		<!-- /01a 1-Col Image -->
+
+        																		<div class="email-edit-container">
+        																			<div class="col-12">
+        																				<div class="row no-gutters">
+        																					<div class="col-6">
+        																						<button class="secondary-btn-wide">Edit
+																								</button>
+        																					</div>
+        																					<div class="col-6">
+        																						<button class="secondary-btn-wide">Save
+																								</button>
+        																					</div>
+        																				</div>
+        																			</div>
+        																		</div>
+
+
+																		  </div>
+																		  <!-- /MODULE 1 -->
+
+																		  <!-- MODULE 2 -->
+																		  <div class="module-container">
+																			 <!--01b 1-Col Headline -->
+																			  <table bgcolor="#CDE7E6" border="0" cellpadding="0" cellspacing="0" width="100%">
+																		  		<tr>
+																		  		 <td align="center" class="pr-20" style="padding: 20px 20px 10px 20px;">
+																		    		<h2 style="color: rgb(26, 66, 79); font-family: 'Crimson Text', Georgia, sans-serif; font-size: 48px; font-weight: normal; line-height: 54px; margin: 0px; text-align: left;">
+																		     		<span style="font-size:48px;">What to expect for your mind body and soul</span></h2></td></tr></table>
+																		     <!-- /01b 1-Col Headline -->
+																		  </div>
+																		  <!-- /MODULE 2 -->
+
+																		 </div>
+
+																		</td>
+																	  </tr>
+																	</table>
+																</td>
+															</tr>
+														</table>
+
+
+
+
+
+													</div>
+												</div>
+												<!-- /EMAIL EDITOR -->
+
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- /EMAIL CONTENT -->
+								
+								
+								
+							</div>
+						</div>	
+						<!-- /EMAIL EDIT/PREVIEW CONTAINER -->
+
+                
+					</div>
+					<!-- /CONTENT CONTAINER --> 
+					
+					
+					
+				
+					
+				</div>
+			 </div>
+		 </div>
+	 </div>
+	 <!-- /DASHBOARD CONTAINER -->
+
+  </div>
+</div>	
+	
+</body>
+
+<!-- SORTABLE.JS -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+<script type="text/javascript">
+
+  
+  Sortable.create(moduleList, { 
+    animation: 150, 
+    ghostClass: 'selected-background',
+  });
+ </script>
+<!-- /SORTABLE.JS -->
+
+<script>
+$(document).ready(function(){
+	
+  // Properties tab
+  $("#properties").click(function(){
+    $("#content").removeClass("dashboard-border");
+    $("#properties").addClass("dashboard-border");
+	$("#content-container").hide();
+	$("#properties-container").show();
+
+  });
+	
+  // Content tab
+   $("#content").click(function(){
+    $("#properties").removeClass("dashboard-border");
+    $("#content").addClass("dashboard-border");
+	$("#content-container").css("display", "flex");
+	$("#properties-container").hide();
+  });
+	
+	
+  // Close new version top icon	
+  $("#close_version").click(function(){
+    $("#new-version-form").hide();
+    $("#new-version-btn").show();
+
+  });
+
+  // Show new version form via Add Campaign Version button
+   $("#new_version").click(function(){
+    $("#new-version-form").show();
+	$("#new-version-btn").hide();
+  });
+	
+	
+    // Close new version cancel button
+   $("#cancel_version").click(function(){
+    $("#new-version-form").hide();
+    $("#new-version-btn").show();
+  });
+	
+	
+  // Version Params Edit
+  $("#version-params-edit").click(function(){
+	  $("#version-details").toggle();
+	  $("#version-heading-icon").toggleClass("rotate-90");
+  });
+	
+  // Toggle theme details	
+  $("#version-heading-icon").click(function(){
+    $("#version-details").toggle();
+	$("#version-heading-icon").toggleClass("rotate-90");
+  });	
+	
+
+  // Edit version toggle
+  $("#version-heading-icon").click(function(){
+    $("#version-details").toggle();
+	$("#version-heading-icon").toggleClass("rotate-90");
+  });			
+
+	
+});
+</script>
+	
+</html>
