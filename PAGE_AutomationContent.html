@@ -10,10 +10,6 @@
       rel="stylesheet">
 <link href="style.css" rel="stylesheet" type="text/css">
 
-	
-<!-- FONTS -->	
-<link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
 
 	  
 <!-- JQUERY -->
@@ -146,6 +142,9 @@
 				
 				<div class="row no-gutters nav-title">
 				 Design Library
+				</div>
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="PAGE_DesignLibrary_Settings.html">Settings</a>
 				</div>
 				<div class="row no-gutters nav-item">
 				  <a class="nav-link" href="#">Images</a>
@@ -401,7 +400,7 @@
 
 								<div class="col-3">
 									<!-- Search form -->
-									<input class="form-control" type="text" placeholder="Search" aria-label="Search">
+									<input id="module-search-bar" class="form-control" type="text" placeholder="Search" aria-label="Search">
 								</div>
 
 								<div class="col-2" style="text-align: right;">
@@ -468,7 +467,7 @@
 								        <table border="0" cellpadding="0" cellspacing="0" class="container" width="350">
 								         
 								          <tr>
-								           <td align="left" style="color: #a6093d; font-family: 'Crimson Text', Helvetica, sans-serif; font-size: 22px; line-height: 26px; font-weight: normal; padding: 20px 20px 20px 0px;">
+								           <td align="left" style="color: #123133; font-family: 'Crimson Text', Helvetica, sans-serif; font-size: 28px; line-height: 32px; font-weight: normal; padding: 20px 20px 20px 0px;">
 								           Lorem ipsum dolor</td></tr><tr>
 								           <td align="left" style="font-family: Helvetica, sans-serif; font-size: 14px; line-height: 18px; font-weight: normal; padding: 0px 20px 20px 0px;">
 								            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
@@ -521,7 +520,7 @@
 											        <table border="0" cellpadding="0" cellspacing="0" class="container" width="350">
 											         
 											          <tr>
-											           <td align="left" style="color: #a6093d; font-family: 'Crimson Text', Helvetica, sans-serif; font-size: 22px; line-height: 26px; font-weight: normal; padding: 20px 20px 20px 20px;">
+											           <td align="left" style="color: #123133; font-family: 'Crimson Text', Helvetica, sans-serif; font-size: 28px; line-height: 32px; font-weight: normal; padding: 20px 20px 20px 20px;">
 								           Lorem ipsum dolor</td></tr><tr>
 											           <td align="left" style="font-family: Helvetica, sans-serif; font-size: 14px; line-height: 18px; font-weight: normal; padding: 0px 20px 20px 20px;">
 								            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</td></tr></table></th></tr></table></td></tr></table>
@@ -1209,6 +1208,16 @@ $(document).ready(function(){
    	 $("#custom-module-container").show();
   
   });	
+
+ // Module search bar
+ $(document).ready(function(){
+  $("#module-search-bar").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myList").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
 	
   // Return to Edit Button on Module Select 
   $("#return-to-edit").click(function(){
@@ -1236,9 +1245,6 @@ $(document).ready(function(){
   $("#edit-module").click(function(){
     $("#email-edit-form").toggleClass('hide');
   });	
-
-
-
 
   // Preview toggle
   $("#preview-icon").click(function(){
