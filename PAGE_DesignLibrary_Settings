@@ -1,0 +1,289 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Cured Campaigns</title>
+
+<!-- STYLESHEETS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+<link href="style.css" rel="stylesheet" type="text/css">
+	
+
+	  
+<!-- JQUERY -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>	
+	
+</head>
+
+<body>
+	
+<div class="container-background">
+  <div class="row no-gutters">
+	
+	<!--SIDENAV -->
+	<div class="col-2">		
+		<div class="container container-nav">
+			
+			<div class="row no-gutters nav-logo">
+			       <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 100 100"><path fill="#123133" d="m32 20h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m22 0h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m22 0h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m-44 22h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m22 0h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m22 0h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m-44 22h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m22 0h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m22 0h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z"></path></svg>&nbsp;&nbsp;&nbsp;&nbsp;<img src="icons/Cured_Logo_Green.png" width="75" height="21"/>&nbsp;Campaigns
+			</div>
+			
+			<div class="cured-campaigns-nav">
+				<div class="row no-gutters nav-title">
+				 Deployments
+				</div>
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="index.html">Campaigns</a>
+				</div>
+
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="PAGE_AutomationDashboard.html">Automated Messages</a>
+				</div>
+
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="#">SMS</a>
+				</div>
+
+				<div class="row no-gutters nav-title">
+				 Data
+				</div>
+
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="#">Audiences</a>
+				</div>
+				
+				<div class="row no-gutters nav-title">
+				 Design Library
+				</div>
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="PAGE_DesignLibrary_Settings.html">Settings</a>
+				</div>
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="#">Images</a>
+				</div>
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="#">Modules</a>
+				</div>
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="#">Templates</a>
+				</div>
+
+				<div class="row no-gutters nav-title">
+				 Resources
+				</div>
+				<div class="row no-gutters nav-item">
+				   <a class="nav-link" href="#">Help &amp; Training</a>
+				</div>
+				<div class="row no-gutters nav-item">
+				   <a class="nav-link" href="#">Submit Feedback</a>
+				</div>
+				 
+				 <div class="row no-gutters nav-title">
+				  <span class="nav-sub-title">&copy; 2020 Cured<br>v1.0 DEV Environment</span>
+				</div>
+			</div>
+
+		</div>
+	 </div>
+	 <!-- /SIDENAV -->
+	 
+	 <!-- DASHBOARD CONTAINER --> 
+	 <div class="col-10">
+		 <div class="container-spacing">
+		 	<div class="row no-gutters">
+				<div class="col container-dashboard">
+					
+					
+				
+					<!-- DASHBOARD HEADING -->
+					<div class="row no-gutters dashboard-heading-container">
+						<div class="col-xl-9 dashboard-heading">
+							Design Library > Settings
+						</div>
+
+						<div class="col-xl-2 dashboard-heading-button">
+							<button class="primary-btn">Update Settings</button>
+						</div>
+						
+					</div>
+					<!-- /DASHBOARD HEADING -->
+					
+					
+					
+					<!--  DASHBOARD ITEM 1-->
+					<div class="row no-gutters campaign-details-container">
+						<div class="col-12">
+
+							<!-- PRIMARY LOGO LIGHT-->
+							<div class="row no-gutters dl-settings-row">
+								<div class="col-2 dl-settings-item">
+								Primary Logo (Dark)
+								</div>
+								
+								<div class="col-2 dl-settings-description">The primary logo that will populate on headers and other modules that leverage a white or light background.
+								</div>
+								
+
+								<div class="col-4 dl-settings-logo-container">
+									<img class="dl-settings-logo" src="icons/socratic_dark.png"  width="250" />
+								</div>
+								<div class="col-2">
+									<div class="dashboard-heading-button">
+							<a href="index.html" class="secondary-btn"><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 52 52"><g fill="#0070D2"><path d="m48.5 31h-3c-0.8 0-1.5 0.8-1.5 1.5v10c0 0.8-0.7 1.5-1.5 1.5h-33c-0.8 0-1.5-0.7-1.5-1.5v-10c0-0.7-0.7-1.5-1.5-1.5h-3c-0.8 0-1.5 0.8-1.5 1.5v13.5c0 2.2 1.8 4 4 4h40c2.2 0 4-1.8 4-4v-13.5c0-0.7-0.7-1.5-1.5-1.5z m-21.5-28.6c-0.6-0.6-1.5-0.6-2.1 0l-13.5 13.5c-0.6 0.6-0.6 1.5 0 2.1l2.1 2.1c0.6 0.6 1.5 0.6 2.1 0l5.6-5.6c0.6-0.6 1.8-0.2 1.8 0.7v21.2c0 0.8 0.6 1.5 1.4 1.5h3c0.8 0 1.6-0.8 1.6-1.5v-21.1c0-0.9 1-1.3 1.7-0.7l5.6 5.6c0.6 0.6 1.5 0.6 2.1 0l2.1-2.1c0.6-0.6 0.6-1.5 0-2.1l-13.5-13.6z"></path></g></svg>&nbsp;Upload Image</a>
+						</div>
+								</div>
+							</div>
+							<!-- /PRIMARY LOGO LIGHT -->
+
+
+							<!-- PRIMARY LOGO DARK -->
+							<div class="row no-gutters dl-settings-row">
+								<div class="col-2 dl-settings-item">
+								Primary Logo (Light)
+								</div>
+								
+								<div class="col-2 dl-settings-description">The primary logo that will populate on headers and other modules that leverage a dark background.
+								</div>
+								
+
+								<div class="col-4 dl-settings-logo-container">
+									<img class="dl-settings-logo" src="icons/socratic_light.png"  width="250" />
+								</div>
+								<div class="col-2">
+									<div class="dashboard-heading-button">
+							<a href="index.html" class="secondary-btn"><?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 52 52"><g fill="#0070D2"><path d="m48.5 31h-3c-0.8 0-1.5 0.8-1.5 1.5v10c0 0.8-0.7 1.5-1.5 1.5h-33c-0.8 0-1.5-0.7-1.5-1.5v-10c0-0.7-0.7-1.5-1.5-1.5h-3c-0.8 0-1.5 0.8-1.5 1.5v13.5c0 2.2 1.8 4 4 4h40c2.2 0 4-1.8 4-4v-13.5c0-0.7-0.7-1.5-1.5-1.5z m-21.5-28.6c-0.6-0.6-1.5-0.6-2.1 0l-13.5 13.5c-0.6 0.6-0.6 1.5 0 2.1l2.1 2.1c0.6 0.6 1.5 0.6 2.1 0l5.6-5.6c0.6-0.6 1.8-0.2 1.8 0.7v21.2c0 0.8 0.6 1.5 1.4 1.5h3c0.8 0 1.6-0.8 1.6-1.5v-21.1c0-0.9 1-1.3 1.7-0.7l5.6 5.6c0.6 0.6 1.5 0.6 2.1 0l2.1-2.1c0.6-0.6 0.6-1.5 0-2.1l-13.5-13.6z"></path></g></svg>&nbsp;Upload Image</a>
+						</div>
+								</div>
+							</div>
+							<!-- /PRIMARY LOGO DARK -->
+
+							<div class="row no-gutters">
+								<div class="col-12" style="border-bottom: solid 1px #ccc; margin-bottom:30px;"></div>
+							</div>
+
+
+
+							<!-- HEADING 1 TYPEFACE -->
+							<div class="row no-gutters dl-settings-row">
+								<div class="col-2 dl-settings-item">
+								Heading 1 
+								</div>
+								
+								<div class="col-2 dl-settings-description">The default settings for primary headings that will populate in standard and dynamic modules.
+								</div>
+								
+
+								<div class="col-4 dl-settings-font-container">
+									<span style="font-size: 28px; color: #123133; font-family: 'Crimson Text', Helvetica, sans-serif;">Lorem ipsum dolar amit</span>
+								</div>
+								<div class="col-2">
+									<div class="dashboard-heading-button">
+										 <div class="form-group">
+										  <select class="form-control dl-settings-hex-input" placeholder="Select Font" id="heading-1">
+										    <option>Crimson Text</option>
+										    <option>Font 2</option>
+										    <option>Font 3</option>
+										    <option>Font 4</option>
+										  </select>
+										</div>
+										<div class="form-group">
+										  <div class="dl-settings-h1-color"></div> <div class="dl-settings-h1-color-alt"></div>
+										  <input class="dl-settings-hex-input" placeholder="Enter Hex" value="#123133" >
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /HEADING 1 TYPEFACE-->
+
+							<!-- HEADING 1 TYPEFACE -->
+							<div class="row no-gutters dl-settings-row">
+								<div class="col-2 dl-settings-item">
+								Heading 2 
+								</div>
+								
+								<div class="col-2 dl-settings-description">The default settings for secondary headings that will populate in standard and dynamic modules.
+								</div>
+								
+
+								<div class="col-4 dl-settings-font-container">
+									<span style="font-size: 22px; color: #123133; font-family: Helvetica, sans-serif;">Lorem ipsum dolar amit</span>
+								</div>
+								<div class="col-2">
+									<div class="dashboard-heading-button">
+										 <div class="form-group">
+										  <select class="form-control dl-settings-hex-input" placeholder="Select Font" id="heading-1">
+										    <option>Helvetica</option>
+										    <option>Font 2</option>
+										    <option>Font 3</option>
+										    <option>Font 4</option>
+										  </select>
+										</div>
+										<div class="form-group">
+										  <div class="dl-settings-h1-color"></div> <div class="dl-settings-h1-color-alt"></div>
+										  <input class="dl-settings-hex-input" placeholder="Enter Hex" value="#123133" >
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /HEADING 1 TYPEFACE-->
+
+
+							<!-- BODY COPY  -->
+							<div class="row no-gutters dl-settings-row">
+								<div class="col-2 dl-settings-item">
+								Paragraph 
+								</div>
+								
+								<div class="col-2 dl-settings-description">The default settings for paragraph text that will populate in standard and dynamic modules.
+								</div>
+								
+
+								<div class="col-4 dl-settings-font-container" style="text-align: left!important;">
+									<span style="font-size: 14px; color: #123133; font-family: Helvetica, sans-serif;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+								</div>
+								<div class="col-2">
+									<div class="dashboard-heading-button">
+										 <div class="form-group">
+										  <select class="form-control dl-settings-hex-input" placeholder="Select Font" id="heading-1">
+										    <option>Helvetica</option>
+										    <option>Font 2</option>
+										    <option>Font 3</option>
+										    <option>Font 4</option>
+										  </select>
+										</div>
+										<div class="form-group">
+										  <div class="dl-settings-h1-color"></div> <div class="dl-settings-h1-color-alt"></div>
+										  <input class="dl-settings-hex-input" placeholder="Enter Hex" value="#123133" >
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- /HEADING 1 TYPEFACE-->
+
+
+
+
+						</div>
+					</div>
+					<!-- /CAMPAIGN DASHBOARD --> 
+					
+					
+				
+					
+				</div>
+			 </div>
+		 </div>
+	 </div>
+	 <!-- /DASHBOARD CONTAINER -->
+
+  </div>
+</div>	
+	
+	
+	
+</body>
+</html>
