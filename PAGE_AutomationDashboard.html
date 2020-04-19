@@ -28,34 +28,63 @@
 	<!--SIDENAV -->
 	<div class="col-2">		
 		<div class="container container-nav">
-			<div class="row no-gutters nav-title">
-			  <img src="icons/Cured_Logo_Green.png" width="75"/>&nbsp; Campaigns
-			</div>
-			<div class="row no-gutters nav-item">
-			  <a class="nav-link" href="index.html">Campaigns</a>
-			</div>
-
-			<div class="row no-gutters nav-item">
-			  <a class="nav-link" href="PAGE_AutomationDashboard.html">Automated Messages</a>
-			</div>
-
-			<div class="row no-gutters nav-item">
-			  <a class="nav-link" href="#">SMS</a>
+			
+			<div class="row no-gutters nav-logo">
+			       <?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 100 100"><path fill="#123133" d="m32 20h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m22 0h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m22 0h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m-44 22h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m22 0h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m22 0h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m-44 22h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m22 0h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z m22 0h-8c-2.2 0-4 1.8-4 4v8c0 2.2 1.8 4 4 4h8c2.2 0 4-1.8 4-4v-8c0-2.2-1.8-4-4-4z"></path></svg>&nbsp;&nbsp;&nbsp;&nbsp;<img src="icons/Cured_Logo_Green.png" width="75" height="21"/>&nbsp;Campaigns
 			</div>
 			
-			<div class="row no-gutters nav-title">
-			 Resources
+			<div class="cured-campaigns-nav">
+				<div class="row no-gutters nav-title">
+				 Deployments
+				</div>
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="index.html">Campaigns</a>
+				</div>
+
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="PAGE_AutomationDashboard.html">Automated Messages</a>
+				</div>
+
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="#">SMS</a>
+				</div>
+
+				<div class="row no-gutters nav-title">
+				 Data
+				</div>
+
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="#">Audiences</a>
+				</div>
+				
+				<div class="row no-gutters nav-title">
+				 Design Library
+				</div>
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="#">Images</a>
+				</div>
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="#">Modules</a>
+				</div>
+				<div class="row no-gutters nav-item">
+				  <a class="nav-link" href="#">Templates</a>
+				</div>
+
+				<div class="row no-gutters nav-title">
+				 Resources
+				</div>
+				<div class="row no-gutters nav-item">
+				   <a class="nav-link" href="#">Help &amp; Training</a>
+				</div>
+				<div class="row no-gutters nav-item">
+				   <a class="nav-link" href="#">Submit Feedback</a>
+				</div>
+				 
+				 <div class="row no-gutters nav-title">
+				  <span class="nav-sub-title">&copy; 2020 Cured<br>v1.0 DEV Environment</span>
+				</div>
 			</div>
-			<div class="row no-gutters nav-item">
-			   <a class="nav-link" href="#">Documentation</a>
-			</div>
-			<div class="row no-gutters nav-item">
-			   <a class="nav-link" href="#">Submit Feedback</a>
-			</div>
-			 
-			 <div class="row no-gutters nav-title">
-			  <span class="nav-sub-title">&copy; 2020 Cured<br>v1.0 DEV Environment</span>
-			</div>
+
 		</div>
 	 </div>
 	 <!-- /SIDENAV -->
@@ -85,7 +114,13 @@
 					<!-- DASHBOARD TOGGLES -->
 					<div class="row no-gutters dashboard-campaign-container">
 						
-						<div class="col-xl-9 hide-mobile">
+						<div class="col-4 col-xl-2 dashboard-toggle align-self-end">
+							ACTIVE
+						</div>
+						<div class="col-4 col-xl-2 dashboard-toggle align-self-end">
+							INACTIVE
+						</div>
+						<div class="col-xl-5 hide-mobile">
 						</div>
 						<div class="col-4 col-xl-3">
 							<div class="form-group">
@@ -163,7 +198,9 @@
 						<div class="col-xl-4 align-self-center">
 							<div class="row no-gutters dashboard-btn-container">
 								<div class="col-4 dashboard-btn">
-									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 52 52"><path fill="#0070D2" d="m26 2c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24z m13.4 18l-15.3 15.5c-0.6 0.6-1.6 0.6-2.2 0l-8.4-8.5c-0.6-0.6-0.6-1.6 0-2.2l2.2-2.2c0.6-0.6 1.6-0.6 2.2 0l4.4 4.5c0.4 0.4 1.1 0.4 1.5 0l11.2-11.6c0.6-0.6 1.6-0.6 2.2 0l2.2 2.2c0.7 0.6 0.7 1.6 0 2.3z"></path></svg>&nbsp;&nbsp;Publish
+
+									<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 52 52"><path fill="#0070D2" d="m30 43c0 1 0.9 2 2 2h4c1.1 0 2-1.1 2-2v-34c0-1-0.9-2-2-2h-4c-1.1 0-2 1.1-2 2v34z m-16 0c0 1 0.9 2 2 2h4c1.1 0 2-1.1 2-2v-34c0-1-0.9-2-2-2h-4c-1.1 0-2 1.1-2 2v34z"></path></svg>
+									&nbsp;Pause
 								</div>
 								<div class="col-4 dashboard-btn-center">
 									<svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 52 52"><g fill="#0070D2"><path d="m26.1 16.4c-5.3 0-9.7 4.3-9.7 9.7s4.3 9.7 9.7 9.7c5.3 0 9.7-4.3 9.7-9.7s-4.4-9.7-9.7-9.7z m0 16.7c-3.9 0-7.1-3.2-7.1-7.1 0-3.9 3.2-7.1 7.1-7.1 3.9 0 7.1 3.2 7.1 7.1-0.1 3.9-3.3 7.1-7.1 7.1z m23.2-1c0.5-1.9 0.8-4 0.8-6.1 0-2.1-0.3-4.1-0.8-6.1h-2.7c-0.4-1.5-1-2.9-1.7-4.2l1.9-1.9c-2.1-3.5-5-6.5-8.6-8.6l-1.9 1.9c-1.3-0.7-2.7-1.3-4.2-1.7v-2.6c-1.9-0.5-4-0.8-6.1-0.8-2.1 0-4.1 0.3-6.1 0.8v2.7c-1.4 0.4-2.8 1-4.1 1.7l-2-1.9c-3.6 2.1-6.5 5.1-8.6 8.6l1.9 1.9c-0.7 1.3-1.3 2.7-1.7 4.2h-2.6c-0.5 1.9-0.8 3.9-0.8 6s0.3 4.1 0.8 6.1h2.7c0.4 1.5 1 2.9 1.7 4.2l-1.9 1.9c2.1 3.5 5 6.5 8.6 8.6l1.9-1.9c1.3 0.7 2.7 1.3 4.2 1.7v2.7c1.9 0.5 4 0.8 6.1 0.8 2.1 0 4.1-0.3 6.1-0.8v-2.7c1.5-0.4 2.9-1 4.2-1.7l1.9 1.9c3.5-2.1 6.5-5 8.6-8.6l-1.9-1.9c0.7-1.3 1.3-2.7 1.7-4.2h2.6z m-5.8 6.5c-0.7 0.9-1.4 1.8-2.3 2.6-0.8 0.8-1.7 1.6-2.6 2.3l-1.9-1.9c-2.1 1.5-4.6 2.5-7.2 3v2.6c-1.1 0.2-2.3 0.3-3.5 0.3-1.2 0-2.3-0.1-3.5-0.3v-2.6c-2.6-0.5-5.1-1.5-7.2-3l-1.9 1.9c-0.9-0.7-1.8-1.5-2.6-2.3-0.8-0.8-1.6-1.7-2.3-2.6l1.9-1.9c-1.5-2.1-2.5-4.6-3-7.2h-2.6c-0.2-1.1-0.3-2.3-0.3-3.5 0-1.2 0.1-2.3 0.3-3.5h2.7c0.5-2.6 1.5-5.1 3-7.2l-1.9-1.9c0.7-0.9 1.5-1.8 2.3-2.6 0.8-0.8 1.7-1.6 2.6-2.3l1.9 1.9c2.1-1.5 4.6-2.5 7.2-3v-2.6c1.1-0.2 2.3-0.3 3.5-0.3 1.2 0 2.3 0.1 3.5 0.3v2.7c2.6 0.5 5.1 1.5 7.2 3l1.9-1.9c0.9 0.7 1.8 1.4 2.6 2.3 0.8 0.8 1.6 1.7 2.3 2.6l-1.9 1.9c1.5 2.1 2.5 4.6 3 7.2h2.7c0.2 1.1 0.3 2.3 0.3 3.5 0 1.2-0.1 2.3-0.3 3.5h-2.7c-0.5 2.6-1.5 5.1-3 7.2l1.8 1.8z"></path></g></svg>&nbsp;&nbsp;Properties
