@@ -1,9 +1,11 @@
 @charset "UTF-8";
 /* CSS Document */
 
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+
 body {
 	background-color:  #123133;
-
 }
 
 .hide {
@@ -715,6 +717,60 @@ body {
 	-moz-transform: rotate(90deg);
 	transform: rotate(90deg) /* For modern browsers(CSS3)  */
 }
+
+
+
+/* DESIGN LIBRARY - SETTINGS */
+.dl-settings-logo-container, .dl-settings-font-container {
+	text-align: center;
+	margin: 0px 20px;
+
+}
+
+
+
+.dl-settings-row {
+	margin: 0px 0px 30px;
+}
+
+.dl-settings-logo {
+	border: solid 1px #ccc;
+	background: url('icons/square-transparent-background.jpg');
+	background-size: 300px; /* Resize the background image to cover the entire container */
+
+}
+
+.dl-settings-item {
+	font-family: 'Nunito Sans', Arial, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.dl-settings-description {
+   font-family: 'Nunito Sans', Arial, sans-serif;
+	font-size: 12px;
+	margin-left: 20px;
+	margin-right: 40px;
+}
+
+.dl-settings-h1-color {
+	height: 30px;
+	width: 30px;
+	background-color: #123133;
+	display: inline-block;
+}
+.dl-settings-h1-color-alt {
+	height: 30px;
+	width: 30px;
+	background-color: #e8bab0;
+	display: inline-block;
+}
+
+.dl-settings-hex-input {
+	font-family: 'Nunito Sans', Arial, sans-serif !important;
+	font-size: 14px !important;
+}
+
 
 
 /* MEDIA QUERY FOR COL-XL BREAKS */
